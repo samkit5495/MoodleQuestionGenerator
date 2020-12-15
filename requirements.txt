@@ -1,20 +1,13 @@
-certifi==2020.12.5
 click==7.1.2
-dominate==2.6.0
 Flask==1.1.2
-Flask-Bootstrap==3.3.7.1
-gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
-MarkupSafe @ file:///opt/concourse/worker/volumes/live/cb778296-98db-45ad-411e-6f726e102dc3/volume/markupsafe_1594371638608/work
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-numpy @ file:///opt/concourse/worker/volumes/live/c646f6b9-b398-438d-7dc7-c7142e0ba44b/volume/numpy_and_numpy_base_1596235504536/work
-pandas @ file:///opt/concourse/worker/volumes/live/905bc214-99a7-4c47-6cae-d63a445c9258/volume/pandas_1598371465625/work
+MarkupSafe==1.1.1
+numpy==1.19.1
+pandas==1.1.1
 python-dateutil==2.8.1
 pytz==2020.1
-six @ file:///opt/concourse/worker/volumes/live/5b31cb27-1e37-4ca5-6e9f-86246eb206d2/volume/six_1605205320872/work
-visitor==0.1.3
+six==1.15.0
 Werkzeug==1.0.1
 xlrd==1.2.0
+gunicorn==20.0.4
