@@ -91,7 +91,7 @@ def convert_to_xml(file):
                 SubElement(SubElement(question, 'correctfeedback'), 'text').text = 'Your answer is correct.'
                 SubElement(SubElement(question, 'partiallycorrectfeedback'), 'text').text = 'Your answer is partially correct.'
                 SubElement(SubElement(question, 'incorrectfeedback'), 'text').text = 'Your answer is incorrect.'
-                SubElement(SubElement(question, 'defaultgrade'), 'text').text = '{0}.0000000'.format(len(d))
+                SubElement(question, 'defaultgrade').text = '{0}.0000000'.format(len(d))
                 SubElement(question, 'shownumcorrect').text = ''
                 for _, q in d.iterrows():
                     subquestion = SubElement(question, 'subquestion')
