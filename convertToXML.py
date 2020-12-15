@@ -39,6 +39,7 @@ def convert_to_xml(file):
 
     for question_type in question_types:
         data = pd.read_excel(file, sheet_name=question_type['name'])
+        data = data.fillna('')
         if question_type['type'] == 'matching':
             data = data.groupby('Sr. No.', as_index=False)
         else:
