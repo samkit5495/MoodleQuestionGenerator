@@ -55,7 +55,9 @@
             </div>
         </div>
         <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+        <table role="presentation" class="table table-striped">
+            <tbody class="files"></tbody>
+        </table>
     </form>
     <br>
     <div class="panel panel-default">
@@ -64,9 +66,13 @@
         </div>
         <div class="panel-body">
             <ul>
-                <li>The maximum file size for uploads in this is <strong>50 MB</strong> (default file size is unlimited).</li>
+                <li>The maximum file size for uploads in this is <strong>50 MB</strong> (default file size is
+                    unlimited).
+                </li>
                 <li>You can <strong>drag &amp; drop</strong> files from your desktop on this webpage.</li>
-                <li>Built with Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> CSS framework and Icons from <a href="http://glyphicons.com/">Glyphicons</a>.</li>
+                <li>Built with Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> CSS framework and
+                    Icons from <a href="http://glyphicons.com/">Glyphicons</a>.
+                </li>
             </ul>
         </div>
     </div>
@@ -81,7 +87,11 @@
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div>
-
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Developed & Designed by <a href="https://samkitjain.in" target="_blank">Samkit Jain</a></span>
+    </div>
+</footer>
 {% raw %}
 <!-- The template to display files available for upload -->
 <script id="template-upload" type="text/x-tmpl">
@@ -114,6 +124,7 @@
         </td>
     </tr>
 {% } %}
+
 </script>
 <!-- The template to display files available for download -->
 <script id="template-download" type="text/x-tmpl">
@@ -163,6 +174,7 @@
         </td>
     </tr>
 {% } %}
+
 </script>
 {% endraw %}
 {% endblock %}
