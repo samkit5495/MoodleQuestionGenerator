@@ -105,10 +105,7 @@ def delete(filename):
 def convert(filename):
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     if os.path.exists(file_path):
-        try:
-            return Response(convert_to_xml(file_path), mimetype='text/xml')
-        except:
-            return json.dumps({'error': 'File does not exists'})
+        return Response(convert_to_xml(file_path), mimetype='text/xml')
 
 
 # serve static files
