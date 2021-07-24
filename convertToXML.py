@@ -87,6 +87,8 @@ def convert_to_xml(file):
             elif question_type['type'] == 'matching':
                 SubElement(SubElement(question, 'name'), 'text').text = str(d['Question Name'].iloc[0])
                 SubElement(SubElement(question, 'questiontext'), 'text').text = str(d['Question Name'].iloc[0])
+                if 'Feedback' in d.columns:
+                    SubElement(SubElement(question, 'generalfeedback'), 'text').text = str(d['Feedback'].iloc[0])
                 SubElement(question, 'penalty').text = '0.3333333'
                 SubElement(SubElement(question, 'correctfeedback'), 'text').text = 'Your answer is correct.'
                 SubElement(SubElement(question, 'partiallycorrectfeedback'), 'text').text = 'Your answer is partially correct.'
